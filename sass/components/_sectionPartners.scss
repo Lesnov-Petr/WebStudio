@@ -1,0 +1,88 @@
+.partners {
+  @extend %section;
+
+  .container {
+    @extend %container;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+
+    font-family: 'Roboto-Bold';
+    @include text(700, 36px, 1.17, 0.03em);
+    color: $blackColor;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+}
+
+.partners__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: $iconColor;
+
+  transition: color $ms $cubic, border $ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.icon-partners1 {
+  fill: currentColor;
+  width: 44px;
+  height: 49px;
+}
+
+.icon-partners2 {
+  fill: currentColor;
+  width: 40px;
+  height: 52px;
+}
+
+.icon-partners3 {
+  fill: currentColor;
+  width: 41px;
+  height: 43px;
+}
+
+.icon-partners4 {
+  fill: currentColor;
+  width: 80px;
+  height: 42px;
+}
+
+.icon-partners5 {
+  fill: currentColor;
+  width: 59px;
+  height: 47px;
+}
+
+.icon-partners6 {
+  fill: currentColor;
+  width: 88px;
+  height: 45px;
+}

@@ -1,0 +1,98 @@
+.form__label {
+  position: relative;
+  @include text(400, 12px, 1.17, 0.01em);
+
+  &:focus-within .form__icon,
+  &:focus-within .form__input {
+    outline-color: $accentColor;
+    fill: $accentColor;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 21px;
+  left: 12px;
+}
+
+.form__input {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  width: 448px;
+  height: 40px;
+  padding: 0;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: outline-color $ms $cubic;
+}
+
+.form__textarea {
+  margin-bottom: 20px;
+  margin-top: 4px;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+
+  transition: outline-color $ms $cubic;
+
+  &::placeholder {
+    @include text(400, 14px, 1.15, 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    outline-color: $accentColor;
+  }
+}
+
+.modal__submit {
+  @extend %button;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form__text {
+  position: relative;
+  @include text(400, 14px, 1.71, 0.03em);
+
+  & .conditions-link {
+    color: $accentColor;
+  }
+
+  &::before {
+    display: inline-block;
+    content: '';
+    vertical-align: middle;
+    margin-right: 7px;
+
+    width: 16px;
+    height: 15px;
+    border: 2px solid $blackColor;
+
+    transition: all $ms $cubic;
+  }
+}
+
+.form__checkbox {
+  appearance: none;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+  outline: none;
+
+  &:checked ~ .form__text::before {
+    background-color: $accentColor;
+    background-image: url(../images/icon-conditions.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $accentColor;
+    border-radius: 4px;
+  }
+}

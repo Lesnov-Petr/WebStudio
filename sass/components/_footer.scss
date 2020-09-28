@@ -1,0 +1,72 @@
+.footer {
+  @extend %section;
+  background: $heroBgColor;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container--center--footer {
+  @extend %container;
+  display: flex;
+  align-items: baseline;
+}
+
+.contact {
+  display: block;
+}
+
+.address__text {
+  margin: 0;
+  margin-top: 20px;
+  @include text(400, 14px, 1.71, 0.03);
+  color: $whiteColor;
+}
+
+.address__contact {
+  display: block;
+  text-decoration: none;
+  @include text(400, 14px, 1.71, 0.03em);
+  color: $footerTextColor;
+  margin-top: 9px;
+}
+
+.footer__title {
+  font-family: 'Roboto-Bold';
+  @include text(700, 14px, 1.14, 0.03em);
+  color: $whiteColor;
+  text-transform: uppercase;
+}
+
+.socseti-box {
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
+.form-footer__input-mail {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  @include text(400, 16px, 1.25, 0.03em);
+
+  color: rgba(255, 255, 255, 0.1);
+
+  background-color: transparent;
+
+  &:focus {
+    color: $whiteColor;
+  }
+}
+
+.plane {
+  margin-left: 10px;
+  fill: $whiteColor;
+}

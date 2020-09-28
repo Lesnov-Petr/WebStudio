@@ -1,0 +1,40 @@
+.socseti {
+  display: flex;
+  list-style: none;
+  width: 206px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+}
+
+.socseti__link {
+  @extend %link-icon;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    color: $whiteColor;
+  }
+
+  transition: background-color $ms $cubic, color $ms $cubic;
+}
+
+.icon-socseti {
+  @extend %icon;
+}
+
+.socseti__link--grey {
+  color: $iconColor;
+}
+
+.socseti__link--bgc {
+  color: $whiteColor;
+  background-color: rgba(255, 255, 255, 0.1);
+}

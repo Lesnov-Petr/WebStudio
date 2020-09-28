@@ -1,0 +1,40 @@
+.section-hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: var(--hero-background);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+
+  text-align: center;
+
+  &__title {
+    display: inline-block;
+    color: $whiteColor;
+    font-family: 'Roboto-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin: 0;
+    max-width: 696px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    display: block;
+    @extend %button;
+    font-family: 'Roboto-Bold';
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
