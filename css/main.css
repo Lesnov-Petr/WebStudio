@@ -66,6 +66,24 @@ html {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .page-header .container, .container, .type-work .container, .our-team .container, .partners .container, .container--center--footer, .portfolio {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header .container, .container, .type-work .container, .our-team .container, .partners .container, .container--center--footer, .portfolio {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header .container, .container, .type-work .container, .our-team .container, .partners .container, .container--center--footer, .portfolio {
+    width: 1200px;
+  }
+}
+
 .socseti__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,7 +137,7 @@ html {
 body {
   color: #757575;
   background-color: #ffffff;
-  font-family: 'Roboto-Regular', sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
 }
 
 .logo-link {
