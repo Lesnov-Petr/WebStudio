@@ -1,41 +1,57 @@
 .page-header {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   border-bottom: 1px solid #eeeeee;
 
   .container {
     @extend %container;
-    display: flex;
+    // display: flex;
   }
 }
 
 .nav {
-  display: inline-flex;
+  // display: inline-flex;
   margin-right: auto;
   align-items: center;
+
+  @include for-size(mobile-only) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @include for-size(mobile) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @include for-size(tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .nav__site {
-  display: inline-flex;
+  display: none;
+  // display: inline-flex;
   list-style: none;
-  margin: 0;
-  padding-left: 0;
-  align-items: center;
+  // margin: 0;
+  // padding-left: 0;
+  // align-items: center;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
+// .nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
-.nav .nav__item:first-child {
-  margin-left: 93px;
-}
+// .nav .nav__item:first-child {
+//   margin-left: 93px;
+// }
 
 .nav__link {
-  display: flex;
+  // display: flex;
   @include link($blackColor);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   transition: color $ms $cubic;
 
@@ -62,7 +78,7 @@
 .icon-mail {
   width: 16px;
   height: 12px;
-  margin-right: 10px;
+  // margin-right: 10px;
 
   fill: currentColor;
 }
@@ -70,7 +86,7 @@
 .icon-phone {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  // margin-right: 10px;
 
   fill: currentColor;
 }

@@ -1,22 +1,50 @@
 .our-approach {
   @extend %section;
+
+  @include for-size(mobile-only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
   @extend %container;
 
   .our-approach__list {
-    display: flex;
+    // display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 }
-.our-approach__item {
-  width: 270px;
 
-  &:not(:first-child) {
-    margin-left: 30px;
+.our-approach__item {
+  @include for-size(mobile-only) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  @include for-size(mobile) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  @include for-size(desktop) {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -25,9 +53,22 @@
   margin-bottom: 10px;
 
   font-family: 'Roboto-Bold';
-  @include text(700, 14px, 1.71, 0.03em);
   text-transform: uppercase;
   color: $blackColor;
+
+  @include for-size(mobile-only) {
+    @include text(700, 14px, 1.14, 0.03em);
+    text-align: center;
+  }
+
+  @include for-size(mobile) {
+    @include text(700, 14px, 1.14, 0.03em);
+    text-align: center;
+  }
+
+  @include for-size(desktop) {
+    @include text(700, 14px, 1.71, 0.03em);
+  }
 }
 
 .our-approach__text {
@@ -36,13 +77,29 @@
 }
 
 .our-approach__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
+  display: inline-block;
+  text-align: center;
   height: 120px;
   background-color: $ourTeamColor;
   margin-bottom: 30px;
+
+  @include for-size(mobile-only) {
+    width: 100%;
+    border-radius: 4px;
+
+    padding-top: 25px;
+  }
+
+  @include for-size(mobile) {
+    width: 100%;
+    border-radius: 4px;
+
+    padding-top: 25px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 
 .our-approach__box-icon {

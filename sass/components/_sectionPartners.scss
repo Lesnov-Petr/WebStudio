@@ -1,22 +1,51 @@
 .partners {
   @extend %section;
 
+  @include for-size(mobile-only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   .container {
     @extend %container;
   }
 
   &__title {
     margin: 0;
-    margin-bottom: 50px;
     text-align: center;
-
     font-family: 'Roboto-Bold';
-    @include text(700, 36px, 1.17, 0.03em);
+
     color: $blackColor;
+
+    @include for-size(mobile-only) {
+      margin-bottom: 30px;
+      @include text(700, 28px, 1.17, 0.03em);
+    }
+
+    @include for-size(mobile) {
+      margin-bottom: 30px;
+      @include text(700, 28px, 1.17, 0.03em);
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 50px;
+      @include text(700, 36px, 1.17, 0.03em);
+    }
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -25,10 +54,24 @@
   &__item {
     margin: 0;
     padding: 0;
+
+    @include for-size(mobile-only) {
+      width: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+
+    @include for-size(mobile) {
+      width: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
   }
 
-  &__item + &__item {
-    margin-left: 30px;
+  @include for-size(desktop) {
+    &__item + &__item {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -36,7 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  // width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

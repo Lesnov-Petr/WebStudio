@@ -1,6 +1,21 @@
 .our-team {
-  display: flex;
+  // display: flex;
   @extend %section;
+
+  @include for-size(mobile-only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   background-color: $ourTeamColor;
 
@@ -10,8 +25,22 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 50px;
     text-align: center;
+
+    @include for-size(mobile-only) {
+      margin-bottom: 30px;
+      @include text(700, 28px, 1.17, 0.03em);
+    }
+
+    @include for-size(mobile) {
+      margin-bottom: 30px;
+      @include text(700, 28px, 1.17, 0.03em);
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 50px;
+      @include text(700, 36px, 1.17, 0.03em);
+    }
 
     font-family: 'Roboto-Bold';
     @include text(700, 36px, 1.17, 0.03em);
@@ -20,29 +49,67 @@
 }
 
 .our-team__list {
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .our-team__item {
-  margin-right: 30px;
-  width: calc((100% - 30px * 3) / 4);
   border: var(--border);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
-}
 
-.our-team__item:nth-child(4n) {
-  margin-right: 0;
+  @include for-size(mobile-only) {
+    margin-bottom: 30px;
+
+    .our-team__item:nth-child(4n) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-size(mobile) {
+    margin-bottom: 30px;
+
+    .our-team__item:nth-child(4n) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    margin-right: 30px;
+    width: calc((100% - 30px * 3) / 4);
+
+    .our-team__item:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .box-manager {
-  padding: 30px 32px;
   background-color: $whiteColor;
+
+  @include for-size(mobile-only) {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+
+  @include for-size(mobile) {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+
+  @include for-size(desktop) {
+    padding: 30px 32px;
+  }
 
   &__name {
     margin: 0;

@@ -9,6 +9,16 @@
   align-items: center;
   justify-content: center;
 
+  @include for-size(mobile-only) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include for-size(mobile) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   &__item + &__item {
     margin-left: 10px;
   }
