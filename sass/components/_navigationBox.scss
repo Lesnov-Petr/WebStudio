@@ -1,16 +1,16 @@
 .page-header {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   border-bottom: 1px solid #eeeeee;
 
   .container {
     @extend %container;
-    // display: flex;
+    display: flex;
   }
 }
 
 .nav {
-  // display: inline-flex;
+  display: inline-flex;
   margin-right: auto;
   align-items: center;
 
@@ -25,33 +25,41 @@
   }
 
   @include for-size(tablet) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding: 0;
   }
 }
 
 .nav__site {
-  display: none;
-  // display: inline-flex;
   list-style: none;
-  // margin: 0;
-  // padding-left: 0;
-  // align-items: center;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+
+  @include for-size(tablet-only) {
+    display: none;
+  }
+
+  @include for-size(tablet) {
+    display: inline-flex;
+  }
 }
 
-// .nav__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
 
-// .nav .nav__item:first-child {
-//   margin-left: 93px;
-// }
+.nav .nav__item:first-child {
+  margin-left: 93px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 88px;
+  }
+}
 
 .nav__link {
-  // display: flex;
+  display: flex;
   @include link($blackColor);
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   transition: color $ms $cubic;
 
@@ -75,10 +83,36 @@
   }
 }
 
+.nav__tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    margin: 0;
+    padding-top: 21px;
+  }
+}
+
+.nav__tablet .nav__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+  }
+}
+
+.nav__tablet .nav__item:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+}
+
+.nav__tablet .nav__link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+  }
+}
+
 .icon-mail {
   width: 16px;
   height: 12px;
-  // margin-right: 10px;
+  margin-right: 10px;
 
   fill: currentColor;
 }
@@ -86,7 +120,7 @@
 .icon-phone {
   width: 10px;
   height: 16px;
-  // margin-right: 10px;
+  margin-right: 10px;
 
   fill: currentColor;
 }
