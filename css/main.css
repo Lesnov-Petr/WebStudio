@@ -82,6 +82,9 @@ html {
 }
 
 .socseti__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -525,7 +528,6 @@ body {
 }
 
 .modal__submit {
-  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1101,9 +1103,27 @@ body {
   }
 }
 
+@media (min-width: 480px) {
+  .partners__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .partners__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .partners__item + .partners__item {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .partners__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .partners__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
@@ -1168,6 +1188,33 @@ body {
 
 .footer {
   background: #2f303a;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 479px) {
+  .container--center--footer {
+    text-align: center;
+  }
+}
+
+@media (min-width: 480px) {
+  .container--center--footer {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container--center--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .contact {
@@ -1175,6 +1222,8 @@ body {
 }
 
 .address__text {
+  margin: 0;
+  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1192,6 +1241,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
 }
 
 .footer__title {
@@ -1205,9 +1255,35 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 479px) {
+  .socseti-box {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 480px) {
+  .socseti-box {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .socseti-box {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
+
 .form-footer__input-mail {
   width: 358px;
   height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-style: normal;
   font-weight: 400;
@@ -1218,11 +1294,30 @@ body {
   background-color: transparent;
 }
 
+@media (max-width: 479px) {
+  .form-footer__input-mail {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 480px) {
+  .form-footer__input-mail {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-footer__input-mail {
+    margin-right: 12px;
+  }
+}
+
 .form-footer__input-mail:focus {
   color: #ffffff;
 }
 
 .plane {
+  margin-left: 10px;
   fill: #ffffff;
 }
 

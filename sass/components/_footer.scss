@@ -1,16 +1,27 @@
 .footer {
   @extend %section;
   background: $heroBgColor;
-  // margin-right: auto;
-  // margin-left: auto;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container--center--footer {
   @extend %container;
-  // display: flex;
-  // align-items: baseline;
+
+  @include for-size(mobile-only) {
+    text-align: center;
+  }
+
+  @include for-size(mobile) {
+    text-align: center;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .contact {
@@ -18,8 +29,8 @@
 }
 
 .address__text {
-  // margin: 0;
-  // margin-top: 20px;
+  margin: 0;
+  margin-top: 20px;
   @include text(400, 14px, 1.71, 0.03);
   color: $whiteColor;
 }
@@ -29,7 +40,7 @@
   text-decoration: none;
   @include text(400, 14px, 1.71, 0.03em);
   color: $footerTextColor;
-  // margin-top: 9px;
+  margin-top: 9px;
 }
 
 .footer__title {
@@ -39,20 +50,43 @@
   text-transform: uppercase;
 }
 
-// .socseti-box {
-//   // margin-left: 70px;
-//   // margin-right: 93px;
-// }
+.socseti-box {
+  @include for-size(mobile-only) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @include for-size(mobile) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @include for-size(desktop) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
 
 .form-footer__input-mail {
   width: 358px;
   height: 50px;
-  // padding-top: 15px;
-  // padding-bottom: 15px;
-  // padding-left: 16px;
-  // border-radius: 4px;
-  // margin-top: 20px;
-  // margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+
+  @include for-size(mobile-only) {
+    margin-bottom: 20px;
+  }
+
+  @include for-size(mobile) {
+    margin-bottom: 20px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 12px;
+  }
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   @include text(400, 16px, 1.25, 0.03em);
@@ -67,6 +101,6 @@
 }
 
 .plane {
-  // margin-left: 10px;
+  margin-left: 10px;
   fill: $whiteColor;
 }
