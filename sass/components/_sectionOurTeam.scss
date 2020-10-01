@@ -52,6 +52,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .our-team__item {
@@ -61,7 +66,7 @@
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
 
-  @include for-size(mobile-only) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
 
     .our-team__item:nth-child(4n) {
@@ -69,18 +74,21 @@
     }
   }
 
-  @include for-size(mobile) {
-    margin-bottom: 30px;
-
-    .our-team__item:nth-child(4n) {
-      margin-bottom: 0;
-    }
-  }
-
-  @include for-size(tablet) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
+    flex-wrap: wrap;
+
+    margin-right: 30px;
     margin-bottom: 30px;
     width: calc((100% - 30px) / 2);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 
   @include for-size(desktop) {
@@ -96,6 +104,7 @@
 
 .box-manager {
   background-color: $whiteColor;
+  width: 100%;
 
   @include for-size(mobile-only) {
     padding-top: 30px;

@@ -10,22 +10,29 @@
 .container--center--footer {
   @extend %container;
 
-  @include for-size(mobile-only) {
+  @include for-size(tablet-only) {
     text-align: center;
   }
 
-  @include for-size(mobile) {
-    text-align: center;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @include for-size(desktop) {
-    display: flex;
     align-items: baseline;
   }
 }
 
 .contact {
-  display: block;
+  display: inline-block;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
 }
 
 .address__text {
@@ -51,20 +58,25 @@
 }
 
 .socseti-box {
-  @include for-size(mobile-only) {
+  @include for-size(tablet-only) {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 
-  @include for-size(mobile) {
-    margin-top: 60px;
-    margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
   }
 
   @include for-size(desktop) {
     margin-left: 70px;
     margin-right: 93px;
   }
+}
+
+.footer-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-footer__input-mail {
@@ -76,11 +88,12 @@
   border-radius: 4px;
   margin-top: 20px;
 
-  @include for-size(mobile-only) {
+  @include for-size(tablet-only) {
     margin-bottom: 20px;
   }
 
-  @include for-size(mobile) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
     margin-bottom: 20px;
   }
 

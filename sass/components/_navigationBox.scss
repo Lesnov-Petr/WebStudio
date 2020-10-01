@@ -14,12 +14,7 @@
   margin-right: auto;
   align-items: center;
 
-  @include for-size(mobile-only) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  @include for-size(mobile) {
+  @include for-size(tablet-only) {
     padding-top: 16px;
     padding-bottom: 16px;
   }

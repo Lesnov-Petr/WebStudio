@@ -42,7 +42,7 @@
 
     @include for-size(mobile) {
       @include text(900, 26px, 1.62, 0.06em);
-      max-width: 360px;
+      max-width: 400px;
     }
 
     @include for-size(desktop) {

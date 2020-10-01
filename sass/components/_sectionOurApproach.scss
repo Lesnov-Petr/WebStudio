@@ -21,23 +21,35 @@
   @extend %container;
 
   .our-approach__list {
-    // display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
 
 .our-approach__item {
-  @include for-size(mobile-only) {
+  @media screen and (max-width: 767px) {
     &:not(:first-child) {
       margin-top: 30px;
     }
   }
 
-  @include for-size(mobile) {
-    &:not(:first-child) {
-      margin-top: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
 

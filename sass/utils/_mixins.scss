@@ -38,6 +38,10 @@
     @media (min-width: $tablet) {
       @content;
     }
+  } @else if $range == desktop-only {
+    @media (max-width: #{$desktop - 1}) {
+      @content;
+    }
   } @else if $range == desktop {
     @media (min-width: $desktop) {
       @content;
