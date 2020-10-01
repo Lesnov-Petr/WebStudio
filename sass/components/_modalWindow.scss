@@ -4,8 +4,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 528px;
-  height: 581px;
+  @include for-size(tablet-only) {
+    width: calc(100% - 30px);
+    max-width: 480px;
+  }
+
   border-radius: 4px;
   padding: 40px;
 
