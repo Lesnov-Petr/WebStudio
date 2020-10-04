@@ -143,31 +143,46 @@
           <h2 class="type-work__title">Чем мы занимаемся</h2>
           <ul class="type-work__list">
             <li class="type-work__item">
-              <img
-                src="./images/code.jpg"
-                alt="менеджер пишет код"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/work.jpg    1x,
+                    ./images/desktop/work@2X.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/desktop/work.jpg" alt="work" />
+              </picture>
               <div class="description">
                 <h3 class="description__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="type-work__item">
-              <img
-                src="./images/phone.jpg"
-                alt="девушка с телефоном и ноутбуком"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mobile.jpg    1x,
+                    ./images/desktop/mobile@2X.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/desktop/mobile.jpg" alt="mobile" />
+              </picture>
               <div class="description">
                 <h3 class="description__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="type-work__item">
-              <img
-                src="./images/color.jpg"
-                alt="менеджер выбирает цвет"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/design.jpg    1x,
+                    ./images/desktop/design@2X.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/desktop/design.jpg" alt="design" />
+              </picture>
               <div class="description">
                 <h3 class="description__title">Дизайнерские решения</h3>
               </div>
@@ -181,11 +196,31 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__item">
-              <img
-                src="./images/IgorDemyaninko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/igor.jpg    1x,
+                    ./images/desktop/igor@2X.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/igor.jpg    1x,
+                    ./images/tablet/igor@2X.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/igor.jpg    1x,
+                    ./images/mobile/igor@2X.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/desktop/igor.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="box-manager">
                 <h3 class="box-manager__name">Игорь Демьяненко</h3>
                 <p class="box-manager__specialty">Product Designer</p>
@@ -226,11 +261,31 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/OlgaRepina.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/olga.jpg    1x,
+                    ./images/desktop/olga@2X.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/olga.jpg    1x,
+                    ./images/tablet/olga@2X.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/olga.jpg    1x,
+                    ./images/mobile/olga@2X.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/desktop/olga.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="box-manager">
                 <h3 class="box-manager__name">Ольга Репина</h3>
                 <p class="box-manager__specialty">Frontend Developer</p>
@@ -271,11 +326,31 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/NikolayTarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/nikolay.jpg    1x,
+                    ./images/desktop/nikolay@2X.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/nikolay.jpg    1x,
+                    ./images/tablet/nikolay@2X.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/nikolay.jpg    1x,
+                    ./images/mobile/nikolay@2X.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/desktop/nikolay.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="box-manager">
                 <h3 class="box-manager__name">Николай Тарасов</h3>
                 <p class="box-manager__specialty">Marketing</p>
@@ -316,12 +391,31 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                src="./images/MihailErmakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/miсhael.jpg    1x,
+                    ./images/desktop/miсhael@2X.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/michael.jpg    1x,
+                    ./images/tablet/michael@2X.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/michael.jpg    1x,
+                    ./images/mobile/michael@2X.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
 
+                <img src="./images/desktop/michael.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="box-manager">
                 <h3 class="box-manager__name">Михаил Ермаков</h3>
                 <p class="box-manager__specialty">UI Designer</p>
