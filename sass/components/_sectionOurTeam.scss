@@ -1,27 +1,12 @@
 .our-team {
   @extend %section;
 
-  @include for-size(mobile-only) {
+  @include for-size(desktop-only) {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  @include for-size(mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @include for-size(desktop) {
-    display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 
   background-color: $ourTeamColor;
-
-  .container {
-    @extend %container;
-  }
 
   &__title {
     margin: 0;

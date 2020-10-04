@@ -1,23 +1,9 @@
 .partners {
   @extend %section;
 
-  @include for-size(mobile-only) {
+  @include for-size(desktop-only) {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  @include for-size(mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @include for-size(desktop) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  .container {
-    @extend %container;
   }
 
   &__title {

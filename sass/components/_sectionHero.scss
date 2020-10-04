@@ -1,5 +1,4 @@
 .section-hero {
-  // max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background: var(--hero-background);
@@ -10,12 +9,7 @@
     url(../images/hero-bg.jpg);
   text-align: center;
 
-  @include for-size(mobile-only) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-
-  @include for-size(mobile) {
+  @include for-size(desktop-only) {
     padding-top: 118px;
     padding-bottom: 118px;
   }

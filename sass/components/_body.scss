@@ -3,3 +3,9 @@ body {
   background-color: $whiteColor;
   font-family: $main-font;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
