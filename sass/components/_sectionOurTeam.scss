@@ -1,6 +1,10 @@
 .our-team {
   @extend %section;
 
+  .container {
+    @extend %container;
+  }
+
   @include for-size(desktop-only) {
     padding-top: 60px;
     padding-bottom: 60px;
