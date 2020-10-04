@@ -1,10 +1,14 @@
 .type-work {
-  display: none;
+  display: flex;
   @extend %section;
   padding-top: 0;
 
   .container {
     @extend %container;
+  }
+
+  @include for-size(desktop-only) {
+    display: none;
   }
 }
 

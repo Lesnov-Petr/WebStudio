@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  @include for-size(tablet-only) {
+  @include for-size(desktop-only) {
     width: calc(100% - 30px);
     max-width: 480px;
   }

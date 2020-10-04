@@ -58,6 +58,10 @@
       margin-left: 30px;
     }
   }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 
 .our-approach__title {
@@ -94,19 +98,11 @@
   height: 120px;
   background-color: $ourTeamColor;
   margin-bottom: 30px;
+  padding-top: 25px;
 
-  @include for-size(mobile-only) {
+  @include for-size(desktop-only) {
     width: 100%;
     border-radius: 4px;
-
-    padding-top: 25px;
-  }
-
-  @include for-size(mobile) {
-    width: 100%;
-    border-radius: 4px;
-
-    padding-top: 25px;
   }
 
   @include for-size(desktop) {

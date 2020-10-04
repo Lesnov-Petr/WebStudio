@@ -106,7 +106,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -118,6 +117,10 @@
   &:focus {
     color: $accentColor;
     border-color: $accentColor;
+  }
+
+  @include for-size(desktop) {
+    width: 170px;
   }
 }
 

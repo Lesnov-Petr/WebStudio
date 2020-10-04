@@ -76,7 +76,10 @@
 .footer-mail {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  @include for-size(desktop-only) {
+    align-items: center;
+  }
 }
 
 .form-footer__input-mail {
