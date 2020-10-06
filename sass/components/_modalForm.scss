@@ -62,7 +62,7 @@
   position: relative;
   @include text(400, 14px, 1.71, 0.03em);
 
-  @include for-size(tablet-only) {
+  @include for-size(desktop-only) {
     @include text(400, 12px, 1.17, 0.03em);
   }
 

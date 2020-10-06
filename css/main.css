@@ -672,7 +672,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .form__text {
     font-style: normal;
     font-weight: 400;
