@@ -73,6 +73,7 @@
   }
 
   @include for-size(desktop) {
+    width: calc((100% - 30px * 5) / 6);
     & + & {
       margin-left: 30px;
     }

@@ -46,7 +46,7 @@
   }
 
   @include for-size(desktop) {
-    width: 270px;
+    width: calc((100% - 3 * 30px) / 4);
   }
 }
 
