@@ -9,7 +9,6 @@
     padding-bottom: 16px;
   }
   .container {
-    @extend %container;
     display: flex;
     align-items: center;
   }

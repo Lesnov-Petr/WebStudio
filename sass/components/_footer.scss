@@ -8,16 +8,12 @@
 }
 
 .container--center--footer {
-  @extend %container;
-
-  @include for-size(tablet-only) {
-    text-align: center;
-  }
+  text-align: center;
 
   @include for-size(tablet) {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   @include for-size(desktop) {
@@ -26,11 +22,8 @@
 }
 
 .contact {
-  display: inline-block;
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     text-align: center;
-    margin-right: 165px;
     margin-bottom: 60px;
   }
 }
@@ -74,11 +67,8 @@
 }
 
 .footer-mail {
-  display: flex;
-  flex-direction: column;
-
   @include for-size(desktop-only) {
-    align-items: center;
+    text-align: center;
   }
 }
 
