@@ -165,7 +165,7 @@ img {
   color: #2196f3;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .logo-link {
     font-style: normal;
     font-weight: 700;

@@ -4,7 +4,7 @@
   text-decoration: none;
   color: $accentColor;
 
-  @include for-size(tablet-only) {
+  @include for-size(desktop-only) {
     @include text(700, 24px, 1.17, 0.03em);
   }
 
