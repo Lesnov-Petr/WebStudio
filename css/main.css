@@ -672,12 +672,7 @@ img {
 .modal__submit {
   margin-right: auto;
   margin-left: auto;
-}
-
-@media (max-width: 1199px) {
-  .modal__submit {
-    margin-top: 30px;
-  }
+  margin-top: 30px;
 }
 
 .form__text {
@@ -1511,6 +1506,10 @@ img {
 
 .form-footer__input-mail:focus {
   color: #ffffff;
+}
+
+.form-footer .modal__submit {
+  margin-top: 0;
 }
 
 .plane {

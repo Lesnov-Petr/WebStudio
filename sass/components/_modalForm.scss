@@ -55,10 +55,7 @@
   @extend %button;
   margin-right: auto;
   margin-left: auto;
-
-  @include for-size(desktop-only) {
-    margin-top: 30px;
-  }
+  margin-top: 30px;
 }
 
 .form__text {
