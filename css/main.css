@@ -670,9 +670,14 @@ img {
 }
 
 .modal__submit {
-  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (max-width: 1199px) {
+  .modal__submit {
+    margin-top: 30px;
+  }
 }
 
 .form__text {

@@ -53,9 +53,12 @@
 
 .modal__submit {
   @extend %button;
-  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
+
+  @include for-size(desktop-only) {
+    margin-top: 30px;
+  }
 }
 
 .form__text {
