@@ -57,10 +57,11 @@
   font-family: 'Roboto';
   text-transform: uppercase;
   color: $blackColor;
+  @include text(700, 14px, 1.14, 0.03em);
+  text-align: center;
 
-  @include for-size(tablet-only) {
-    @include text(700, 14px, 1.14, 0.03em);
-    text-align: center;
+  @include for-size(tablet) {
+    text-align: start;
   }
 
   @include for-size(desktop) {
@@ -80,15 +81,8 @@
   background-color: $ourTeamColor;
   margin-bottom: 30px;
   padding-top: 25px;
-
-  @include for-size(desktop-only) {
-    width: 100%;
-    border-radius: 4px;
-  }
-
-  @include for-size(desktop) {
-    width: 270px;
-  }
+  width: 100%;
+  border-radius: 4px;
 }
 
 .our-approach__box-icon {

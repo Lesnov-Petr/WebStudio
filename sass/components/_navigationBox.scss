@@ -26,15 +26,6 @@
   align-items: center;
   width: 100%;
 
-  @include for-size(tablet-only) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  @include for-size(tablet) {
-    padding: 0;
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 88px;
   }

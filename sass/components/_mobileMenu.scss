@@ -74,29 +74,18 @@
   @include for-size(tablet-only) {
     display: flex;
     justify-content: center;
-  }
-}
-
-.nav .nav__item:first-child {
-  @include for-size(tablet-only) {
-    margin: 0;
-    margin-bottom: 40px;
-  }
-}
-.nav__item:not(:last-child) {
-  @include for-size(tablet-only) {
-    margin: 0;
-    margin-bottom: 40px;
-  }
-}
-
-.nav__item {
-  @include for-size(tablet-only) {
     margin-bottom: 60px;
   }
+
+  &:not(:last-child) {
+    @include for-size(tablet-only) {
+      margin: 0;
+      margin-bottom: 40px;
+    }
+  }
 }
 
-.nav__link {
+.nav__item .nav__link {
   @include for-size(tablet-only) {
     display: inline-flex;
     padding-top: 0;
