@@ -4,11 +4,7 @@
   text-decoration: none;
   color: $accentColor;
 
-  @include for-size(mobile-only) {
-    @include text(700, 24px, 1.17, 0.03em);
-  }
-
-  @include for-size(mobile) {
+  @include for-size(tablet-only) {
     @include text(700, 24px, 1.17, 0.03em);
   }
 

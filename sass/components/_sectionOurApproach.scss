@@ -58,12 +58,7 @@
   text-transform: uppercase;
   color: $blackColor;
 
-  @include for-size(mobile-only) {
-    @include text(700, 14px, 1.14, 0.03em);
-    text-align: center;
-  }
-
-  @include for-size(mobile) {
+  @include for-size(tablet-only) {
     @include text(700, 14px, 1.14, 0.03em);
     text-align: center;
   }
