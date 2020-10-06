@@ -220,6 +220,12 @@ img {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .page-header__container {
+    width: 100%;
+  }
+}
+
 .nav {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -556,8 +562,6 @@ img {
 }
 
 .modal_close_icon {
-  width: 30px;
-  height: 30px;
   fill: currentColor;
 }
 
@@ -1682,7 +1686,7 @@ img {
 
 .mobile-menu {
   position: absolute;
-  right: 15px;
+  right: 10px;
   top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1695,6 +1699,7 @@ img {
           align-items: center;
   margin: 0;
   padding: 0;
+  padding: 10px;
   border: none;
   width: 40px;
   height: 40px;

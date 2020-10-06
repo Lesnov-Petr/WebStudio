@@ -8,9 +8,16 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+
   .container {
     display: flex;
     align-items: center;
+  }
+}
+
+.page-header__container {
+  @include for-size(tablet-only) {
+    width: 100%;
   }
 }
 
