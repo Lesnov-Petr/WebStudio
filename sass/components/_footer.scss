@@ -67,8 +67,8 @@
 }
 
 .footer-mail {
-  @include for-size(desktop-only) {
-    text-align: center;
+  @include for-size(desktop) {
+    text-align: start;
   }
 }
 

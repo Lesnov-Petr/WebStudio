@@ -1414,9 +1414,9 @@ img {
   }
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
   .footer-mail {
-    text-align: center;
+    text-align: start;
   }
 }
 
