@@ -27,7 +27,7 @@
       @include text(700, 36px, 1.17, 0.03em);
     }
 
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto';
     @include text(700, 36px, 1.17, 0.03em);
     color: $blackColor;
   }
@@ -110,7 +110,7 @@
     margin: 0;
     margin-bottom: 10px;
 
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto';
     @include text(700, 16px, 1.19, 0.03em);
     text-align: center;
     color: $blackColor;

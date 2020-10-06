@@ -71,19 +71,19 @@
   &__title {
     display: inline-block;
     color: $whiteColor;
-    font-family: 'Roboto-Medium';
+    font-family: 'Roboto';
     font-style: normal;
     text-transform: uppercase;
 
     margin: 0;
     margin-bottom: 30px;
 
-    @include for-size(mobile-only) {
+    @include for-size(tablet-only) {
       @include text(900, 26px, 1.62, 0.06em);
       max-width: 360px;
     }
 
-    @include for-size(mobile) {
+    @include for-size(tablet) {
       @include text(900, 26px, 1.62, 0.06em);
       max-width: 400px;
     }
@@ -97,7 +97,7 @@
   &__button {
     display: block;
     @extend %button;
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto';
 
     margin-right: auto;
     margin-left: auto;
