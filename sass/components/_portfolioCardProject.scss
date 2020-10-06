@@ -28,6 +28,10 @@
 
     width: calc((100% - 30px) / 2);
 
+    &:first-child {
+      height: 404px;
+    }
+
     &:nth-child(2n) {
       margin-right: 0;
     }
