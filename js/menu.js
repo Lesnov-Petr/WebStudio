@@ -11,5 +11,6 @@
     menuBtnRef.setAttribute('aria-expanded', !expanded);
 
     mobileMenuRef.classList.toggle('is-open');
+    mobileContactRef.classList.toggle('is-open');
   });
 })();

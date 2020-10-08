@@ -220,6 +220,13 @@ img {
           align-items: center;
 }
 
+.page-header.is-open {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+}
+
 @media (max-width: 767px) {
   .page-header__container {
     width: 100%;
