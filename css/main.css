@@ -194,7 +194,6 @@ img {
 }
 
 .page-header {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,8 +205,12 @@ img {
 
 @media (max-width: 767px) {
   .page-header {
+    position: fixed;
     padding-top: 16px;
     padding-bottom: 16px;
+    height: 60px;
+    background-color: #fff;
+    width: 100%;
   }
 }
 
@@ -1651,6 +1654,7 @@ img {
 @media (max-width: 767px) {
   .nav {
     position: absolute;
+    overflow-y: scroll;
     display: none;
     top: 100%;
     left: 0;
