@@ -42,6 +42,13 @@
   @include text(400, 14px, 1.71, 0.03em);
   color: $footerTextColor;
   margin-top: 9px;
+
+  transition: color $ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .footer__title {

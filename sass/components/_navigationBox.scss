@@ -106,11 +106,16 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0;
   }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .icon-mail {
   width: 16px;
-  height: 12px;
+  height: 16px;
   margin-right: 10px;
 
   fill: currentColor;
