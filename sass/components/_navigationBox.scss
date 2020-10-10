@@ -111,6 +111,7 @@
 
 .nav__tablet .nav__link {
   color: $primaryColor;
+  align-items: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0;
   }
